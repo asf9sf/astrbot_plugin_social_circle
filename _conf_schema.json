@@ -1,0 +1,38 @@
+{
+  "enable_inject": {
+    "description": "把社会关系注入对话",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后每轮对话都会把朋友/家人名单塞进上下文，她聊天时才会自然提到别人"
+  },
+  "friend_count": {
+    "description": "生成几个人",
+    "type": "int",
+    "default": 4,
+    "hint": "建议 3-5。太多会稀释存在感，每个人都记不住；太少又撑不起一个社会"
+  },
+  "evolve_daily": {
+    "description": "每天自动推进近况",
+    "type": "bool",
+    "default": true,
+    "hint": "每天第一次对话时，后台让其中 1-2 个人发生一点小事。这样朋友是活的，不是一张快照"
+  },
+  "circle_hint": {
+    "description": "生成社会关系的补充要求",
+    "type": "string",
+    "default": "",
+    "hint": "可选。例如「必须有一个上小学的弟弟」「只能有女性朋友」。人设里已经写明的关系不用重复填"
+  },
+  "inject_max_chars": {
+    "description": "注入文本长度上限",
+    "type": "int",
+    "default": 600,
+    "hint": "太长会挤占上下文。600 字大约能容纳 5-6 个人的完整信息"
+  },
+  "auto_regenerate": {
+    "description": "人设变化时自动重新生成",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后修改人格不会自动换掉朋友圈，需要手动 /社会链重写"
+  }
+}

@@ -1,0 +1,8 @@
+name: astrbot_plugin_social_circle
+display_name: 角色社会链（朋友圈）
+desc: 按人格为 AI 生成一套固定的朋友/家人/同事，并让他们的近况每天自动推进，让角色的世界不只围着你转
+version: v1.0.0
+author: asf9sf
+repo: https://github.com/asf9sf/astrbot_plugin_social_circle
+support_platforms:
+  - aiocqhttp
